@@ -1,0 +1,8 @@
+{
+  "solargraph.useBundler": true,
+  "solargraph.bundlerPath": "/Users/haryu/.rbenv/versions/3.0.0/bin/bundler",
+  "ruby.useBundler": true,
+  "ruby.lint": {
+    "rubocop": true
+  }
+}
