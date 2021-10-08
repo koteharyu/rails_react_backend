@@ -1,7 +1,7 @@
 class PostsController < ApplicationController
 
   def index
-    posts = Post.all
+    posts = Post.order(created_at: :desc)
     render json: posts
   end
 
@@ -31,7 +31,7 @@ class PostsController < ApplicationController
   def destroy
     post = Post.find(params[:id])
     post.destroy!
-    redner json: post
+    render json: post
   end
 
   private
