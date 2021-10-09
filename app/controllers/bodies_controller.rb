@@ -1,7 +1,7 @@
 class BodiesController < ApplicationController
 
-  def inde
-    bodies = Body.order(create_at: :desc)
+  def index
+    bodies = Body.order(create_at: :desc).limit(10)
     render json: bodies
   end
 
