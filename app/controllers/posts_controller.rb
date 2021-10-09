@@ -15,7 +15,7 @@ class PostsController < ApplicationController
     if post.save
       render json: post, status: :created
     else
-      render json: post.errros
+      render json: post.errors
     end
   end
 
