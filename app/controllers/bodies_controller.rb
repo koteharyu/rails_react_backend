@@ -1,8 +1,11 @@
 class BodiesController < ApplicationController
 
   def index
-    bodies = Body.order(create_at: :desc).limit(10)
+    bodies = Body.order(created_at: :desc)
     render json: bodies
+    # weights = bodies.pluck(:weight)
+    # created_ats = bodies.pluck(:created_at)
+    # render json: { bodies: bodies, weights: weights, created_ats: created_ats}
   end
 
   def create

@@ -1,3 +1,3 @@
 class BodySerializer < ActiveModel::Serializer
-  attributes :id
+  attributes :id, :weight, :created_at
 end
